@@ -23,3 +23,21 @@
    git push origin master 后面提交就直接用这个命令
  
 14.git clone git@github.com:YFmylove/git.git 从远程克隆
+
+
+
+
+二:创建分支
+   查看分支：git branch
+
+   创建分支：git branch <name>
+
+   切换分支：git checkout <name>
+
+   创建+切换分支：git checkout -b <name>
+
+   合并某分支到当前分支：git merge <name>
+
+   删除分支：git branch -d <name>
+
+
