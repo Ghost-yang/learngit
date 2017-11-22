@@ -16,4 +16,7 @@
 
 
 创建SSH key:  ssh-keygen -t rsa -C "280165482@qq.com"
+git remote add origin https://github.com/YFmylove/learngit.git 本地仓库关联远程仓库
+git push -u origin master 第一次提交,本地的Master同步到远程的Master
+git push origin master 后面提交就直接用这个命令
  
