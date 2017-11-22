@@ -1,4 +1,4 @@
-1.git init 初始化仓库
+﻿1.git init 初始化仓库
 2.git add 添加文件
 3.git commit -m "提交说明"
 4.git status 查看当前代码库的状态
@@ -51,4 +51,6 @@
   4.git push --set-upstream origin 分支名 推送本地分支到远程
     git branch --set-upstream branch-name origin/branch-name 建立本地分支与远程分支的关联
     git pull 拉取最新代码
+
+............未完待续
 
