@@ -38,10 +38,15 @@
    创建+切换分支：git checkout -b <name>
 
    合并某分支到当前分支：git merge <name>
+   git merge --no-ff -m "merge with no-ff" dev 合并,禁用Fast forward模式,-m 增加提交记录
 
    删除分支：git branch -d <name>
   2.当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 
    用git log --graph命令可以看到分支合并图。
+
+  3. git stash 把当前的工作去储存起来,去完成其他事情.
+      git stash list 查看储存的
+      git stash pop 恢复工作区 git stash apply stash@{0}也可以恢复
 
 
