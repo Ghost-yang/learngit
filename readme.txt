@@ -4,6 +4,7 @@
 4.git status 查看当前代码库的状态
 5.git diff 查看当前的修改
 6.git log 查看当前的所有修改的日志 ,信息输出太多可以--pretty=oneline
+	git log --graph --pretty=oneline --abbrev-commit -----直接显示提交的ID和记录
 7.git reset --hard HEAD^ 回退版本 HEAD表示当前版本,HEAD^表示上一个版本.HEAD~100 前100的版本
 
 8.git reflog 记录每次使用的命令 
@@ -41,12 +42,6 @@
    删除分支：git branch -d <name>
   2.当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 
-<<<<<<< HEAD
-   用git log --graph命令可以看到分支合并图。
-=======
-  2.当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
-
    用git log --graph命令可以看到分支合并图。
 
->>>>>>> feather
 
