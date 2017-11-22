@@ -48,5 +48,7 @@
   3. git stash 把当前的工作去储存起来,去完成其他事情.
       git stash list 查看储存的
       git stash pop 恢复工作区 git stash apply stash@{0}也可以恢复
-
+  4.git push --set-upstream origin 分支名 推送本地分支到远程
+    git branch --set-upstream branch-name origin/branch-name 建立本地分支与远程分支的关联
+    git pull 拉取最新代码
 
