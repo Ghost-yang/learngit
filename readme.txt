@@ -1,4 +1,13 @@
-﻿1.git init 初始化仓库
+﻿一、
+安装git:
+配置用户名：
+        git config --global user.name "随便取一个用户名" (回车)
+        git config --global user.email "输入你自己的邮箱" (回车)
+生产.ssh文件:
+		创建SSH key:  ssh-keygen -t rsa -C "280165482@qq.com"
+二、
+初始化本地仓库：
+1.git init 初始化仓库
 2.git add 添加文件
 3.git commit -m "提交说明"
 4.git status 查看当前代码库的状态
@@ -7,29 +16,25 @@
 	git log --graph --pretty=oneline --abbrev-commit -----直接显示提交的ID和记录
 7.git reset --hard HEAD^ 回退版本 HEAD表示当前版本,HEAD^表示上一个版本.HEAD~100 前100的版本
 
-8.git reflog 记录每次使用的命令 
+8.git reflog 记录每次使用的命令 (可以通过它找到commit ID)
 
 9. git checkout -- file 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时.
 10.git reset HEAD file 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
 
 11.git rm file;git commit -m ""  删除文件
 
-
-
-12.创建SSH key:  ssh-keygen -t rsa -C "280165482@qq.com"
-   git remote add origin https://github.com/YFmylove/learngit.git 本地仓库关联远程仓库 //Http协议
+连接远程库：
+1. git remote add origin https://github.com/YFmylove/learngit.git 本地仓库关联远程仓库 //Http协议
    或
    git remote add origin git@github.com:YFmylove/learngit.git				//ssh 协议
 
-13.git push -u origin master 第一次提交,本地的Master同步到远程的Master
+2.git push -u origin master 第一次提交,本地的Master同步到远程的Master
    git push origin master 后面提交就直接用这个命令
  
-14.git clone git@github.com:YFmylove/git.git 从远程克隆
+3.git clone git@github.com:YFmylove/git.git 从远程克隆
 
 
-
-
-二:创建分支
+创建分支:
    查看分支：git branch
 
    创建分支：git branch <name>
