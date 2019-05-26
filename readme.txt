@@ -18,10 +18,17 @@
 
 8.git reflog 记录每次使用的命令 (可以通过它找到commit ID)
 
-9. git checkout -- file 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时.
-10.git reset HEAD file 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+9. git checkout -- file :把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+	一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+	一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+	总之，就是让这个文件回到最近一次git commit或git add时的状态。
 
-11.git rm file;git commit -m ""  删除文件
+10.git reset HEAD file 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步:
+		第一步用命令git reset HEAD file，就回到了场景9，
+第二步按场景9操作。
+
+11.git rm file;
+	git commit -m ""  删除文件
 
 连接远程库：
 1. git remote add origin https://github.com/YFmylove/learngit.git 本地仓库关联远程仓库 //Http协议
@@ -37,11 +44,8 @@
 创建分支:
    查看分支：git branch
 
-   创建分支：git branch <name>
-
+   创建分支：git branch <name>		或	(   创建+切换分支：git checkout -b <name>)
    切换分支：git checkout <name>
-
-   创建+切换分支：git checkout -b <name>
 
    合并某分支到当前分支：git merge <name>
    git merge --no-ff -m "merge with no-ff" dev 合并,禁用Fast forward模式,-m 增加提交记录
