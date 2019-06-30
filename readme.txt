@@ -62,6 +62,18 @@
   4.git push --set-upstream origin 分支名 推送本地分支到远程
     git branch --set-upstream branch-name origin/branch-name 建立本地分支与远程分支的关联
     git pull 拉取最新代码
+	
+报错集锦：
+! [rejected] master -> master (non-fast forward)
+
+解决方式:
+1、git pull origin master --allow-unrelated-histories //把远程仓库和本地同步，消除差异
+
+2、重新add和commit相应文件
+
+3、git push origin master
+
+4、此时就能够上传成功了
 
 ............未完待续
 
